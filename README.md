@@ -3,14 +3,14 @@ simple test array performance
 
 Замер скорости основных методов массивов
 
-'push 10 to 10', duration: '0ms'
-'push 10 to 10000', duration: '0ms'
-'push 10 to 1000000', duration: '0ms'
-'push 10000 to 10', duration: '1ms'
-'push 10000 to 10000', duration: '2ms'
-'push 10000 to 1000000', duration: '1ms'
-'shift 10 to 10', duration: '0ms'
-'shift 10 to 10000', duration: '0ms'
+* 'push 10 to 10', duration: '0ms'
+* 'push 10 to 10000', duration: '0ms'
+* 'push 10 to 1000000', duration: '0ms'
+* 'push 10000 to 10', duration: '1ms'
+* 'push 10000 to 10000', duration: '2ms'
+* 'push 10000 to 1000000', duration: '1ms'
+* 'shift 10 to 10', duration: '0ms'
+* 'shift 10 to 10000', duration: '0ms'
 'shift 10 to 1000000', duration: '11ms'
 'shift 10000 to 10', duration: '2ms'
 'shift 10000 to 10000', duration: '3ms'
