@@ -30,7 +30,11 @@ let func = {
   arrFindIndex(arr, i) {
     arr.findIndex(e => {i === e})
   },
-
+  arrFindWithFor(arr, num) {
+    for(let i = arr.length; i > 0; i--) {
+      if(arr[i] === num) return i
+    }
+  },
 
   arrMap(arr) {
     arr.map(e => {
@@ -54,8 +58,19 @@ let func = {
       i--
     }
   },
-  arrFor(arr) {
+  arrForDecr(arr) {
     for(let i = arr.length; i > 0; i--) {
+      Math.random()
+    }
+  },
+  arrForIncrCache(arr) {
+    let len = arr.length
+    for(let i = 0; i < len; i++) {
+      Math.random()
+    }
+  },
+  arrForIncr(arr) {
+    for(let i = 0; i < arr.length; i++) {
       Math.random()
     }
   }

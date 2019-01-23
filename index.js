@@ -47,12 +47,15 @@ let result = []
   result.push(timer(() => {func.arrIndexOf(arr1000000, 9999)}, 'indexof in 1000000'))
   result.push(timer(() => {func.arrFind(arr1000000, 9999)}, 'find in 1000000'))
   result.push(timer(() => {func.arrFindIndex(arr1000000, 9999)}, 'findIndex in 1000000'))
+  result.push(timer(() => {func.arrFindWithFor(arr1000000, 9999)}, 'arrFindWithFor in 1000000'))
 
 // loop by arr
   result.push(timer(() => {func.arrMap(arr1000000)}, 'map in 1000000'))
   result.push(timer(() => {func.arrForEach(arr1000000)}, 'forEach in 1000000'))
   result.push(timer(() => {func.arrForIn(arr1000000)}, 'for in in 1000000'))
   result.push(timer(() => {func.arrWhile(arr1000000)}, 'while in 1000000'))
-  result.push(timer(() => {func.arrFor(arr1000000)}, 'simple For in 1000000'))
+  result.push(timer(() => {func.arrForDecr(arr1000000)}, 'simple For decrement in 1000000'))
+  result.push(timer(() => {func.arrForIncrCache(arr1000000)}, 'simple For inc with cache in 1000000'))
+  result.push(timer(() => {func.arrForIncr(arr1000000)}, 'simple For inc in 1000000'))
 
 console.log(result)
